@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator</title>
+    <style>
+        /* Child Selector */
+        div>p{
+            color:red;
+            background-color: blue;
+        }
+        /* adecent sibling selector */
+        div + h1{
+            color:aqua;
+        }
+        /* General sibling selector */
+        div ~ h2{
+            color:blue;
+        }
+        /* descendant selector  */
+        div p{
+            color:red;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+      1. child selector (>)
+      2. adjecent sibling selector (+)
+      3. gerneral sibling selector (~)
+      4. descendant selector (space)
+    -->
+
+    <div>
+        <p>This is first para</p>
+        <p>second</p>
+        <section>
+            <p>I am into the section</p>
+        </section>
+        <p>Thirs</p>
+        
+    </div>
+    <h1>Style me by using adjecent sibling selector</h1>
+    <h1>enefsadfosfhjsdofoisd</h1>
+    <p>First outer para</p>
+    <p>Second outer para</p>
+    <h2>style me using general sibling selector</h2>
+    <h2>Styel general.......</h2>
+    
+
+    
+</body>
+</html>

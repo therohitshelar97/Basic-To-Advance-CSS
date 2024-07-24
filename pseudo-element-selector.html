@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element Selector</title>
+    <style>
+        #p::first-line{
+            color:red;
+        }
+        #p1::first-letter{
+            font-size: 100px;
+            font-weight: bold;
+        }
+        
+
+        /* h1::before{
+            content: url('images/th.jfif');
+        
+        } */
+        /* h1::after{
+            content: url('images/th.jfif');
+        
+        } */
+        h1::after{
+            content: ' I am the last One';
+        
+        }
+        ::marker{
+            color:red;
+        
+        }
+    </style>
+</head>
+<body>
+    <p id="p">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem soluta a quam corporis, eveniet amet quisquam voluptatem placeat modi, illum facere ut, iure esse pariatur deserunt cum assumenda? Ducimus, hic.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem soluta a quam corporis, eveniet amet quisquam voluptatem placeat modi, illum facere ut, iure esse pariatur deserunt cum assumenda? Ducimus, hic.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem soluta a quam corporis, eveniet amet quisquam voluptatem placeat modi, illum facere ut, iure esse pariatur deserunt cum assumenda? Ducimus, hic.
+    </p>
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex libero voluptatum molestiae magni aliquam aspernatur nihil, laborum eveniet fuga consequuntur perferendis beatae doloremque accusamus quisquam rem atque repellat numquam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex libero voluptatum molestiae magni aliquam aspernatur nihil, laborum eveniet fuga consequuntur perferendis beatae doloremque accusamus quisquam rem atque repellat numquam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex libero voluptatum molestiae magni aliquam aspernatur nihil, laborum eveniet fuga consequuntur perferendis beatae doloremque accusamus quisquam rem atque repellat numquam?
+    </p>
+    <h1>Hello Brother.......</h1>
+
+
+    <ul>
+        <li>Python</li>
+        <li>Django</li>
+        <li>JavaScript</li>
+        <li>ReactJS</li>
+        <li>Bootstrap</li>
+    </ul>
+</body>
+</html>

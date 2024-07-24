@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Clip</title>
+    <style>
+        .body1{
+            border:10px dotted green;
+            height: 100px;
+            background: red;
+            background-clip: border-box;
+            
+        }
+        .body2{
+            border:10px dotted green;
+            height: 100px;
+            background: red;
+            background-clip:padding-box;
+            
+        }
+        .body3{
+            border:10px dotted green;
+            padding: 20px;
+            height: 100px;
+            background: red;
+            background-clip: content-box;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="body1">
+           background-clip: border-box
+    </div>
+    <br>
+    <div class="body2">
+       <h1>background-clip: padding-box</h1>
+    </div>
+    <br>
+    <div class="body3">
+        <p>background-clip: content-boxs</p>
+    </div>
+</body>
+</html>
