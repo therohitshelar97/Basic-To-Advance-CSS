@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        .div1{
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            z-index: 1;
+        }
+        .div2{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            z-index: 1;
+        }
+        .div3{
+            background-color: pink;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            
+        }
+        .div4{
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+        }
+        .div5{
+            background-color: orange;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top:100px;
+            left:100px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+</body>
+</html>

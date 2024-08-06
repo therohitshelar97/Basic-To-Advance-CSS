@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .nav{
+            background-color: antiquewhite;
+            height: 70px;
+
+        }
+        ul{
+            list-style-type: none;
+            padding-top: 27px;
+            
+        }
+        li{
+            display: inline-block;
+            width: 100px;
+        }
+        .static{
+            height: 300px;
+            width: 30%;
+            background-color: aquamarine;
+            position: static;
+            top:100px;
+            left: 100px;
+        }
+        .relative{
+            height: 300px;
+            width: 30%;
+            background-color: red;
+            position: relative;
+            left: 350px;
+            
+        }
+
+        .fixed{
+            height: 300px;
+            width: 20%;
+            background-color: yellow;
+            position: fixed;
+            left: 0;
+            top: 100px;
+        }
+
+        .sticky{
+            position: sticky;
+            top: 1px;
+        }
+
+        .absolute{
+            height: 250px;
+            width: 20%;
+            background-color: blue;
+            position: absolute;
+            left: 350px;
+            top: 300px;
+        }
+        body{
+            height: 150vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    1. static (default)
+    2. relative
+    3. fixed 
+    4. absolute
+    5. sticky
+    -->
+
+    <nav class="nav sticky">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Career</li>
+      </ul>
+    </nav>
+
+    <div class="static">
+        <h2>static position</h2>
+        <h2>The object we can not move</h2>
+    </div>
+    <div class="relative">
+        <h2>Relative Position</h2>
+        <h2>It can move</h2>
+    </div>
+
+    <div class="fixed">
+        <h2>Fixed Position</h2>
+    </div>
+    <div class="absolute">
+        <h1>Absolute Position</h1>
+    </div>
+
+</body>
+</html>

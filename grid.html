@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Display</title>
+    <style>
+
+        .container{
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 33% 33% 33%;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+        
+        .div1{
+            border: 0.1 solid rgb(46, 43, 43);
+            box-shadow: 0 0 3px 3px rgb(54, 53, 53);
+            padding: 30px;
+        }
+
+       
+        @media screen and (max-width:820px) {
+            .container{
+            display: grid;
+            grid-template-rows: auto auto auto ;
+            grid-template-columns: 47% 47%;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+            
+        }
+
+        @media screen and (max-width:640px) {
+            .container{
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: 100%;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <h2>Cloud</h2>
+            <p>
+                Cloud is more than just technology, it is important for all high-impact business transformations, providing the agility to create innovative new business models, customer experiences, and product offerings.
+            </p>
+        </div>
+        <div class="div1">
+            <h2>Innovate</h2>
+            <p>
+                Cloud is more than just technology, it is important for all high-impact business transformations, providing the agility to create innovative new business models, customer experiences, and product offerings.
+            </p>
+        </div>
+        <div class="div1">
+            <h2>Accelerate</h2>
+            <p>
+                Cloud is more than just technology, it is important for all high-impact business transformations, providing the agility to create innovative new business models, customer experiences, and product offerings.
+            </p>
+        </div>
+        <div class="div1">
+            <h2>Cloud</h2>
+            <p>
+                Cloud is more than just technology, it is important for all high-impact business transformations, providing the agility to create innovative new business models, customer experiences, and product offerings.
+            </p>
+        </div>
+        <div class="div1">
+            <h2>Innovate</h2>
+            <p>
+                Cloud is more than just technology, it is important for all high-impact business transformations, providing the agility to create innovative new business models, customer experiences, and product offerings.
+            </p>
+        </div>
+        <div class="div1">
+            <h2>Accelerate</h2>
+            <p>
+                Cloud is more than just technology, it is important for all high-impact business transformations, providing the agility to create innovative new business models, customer experiences, and product offerings.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
