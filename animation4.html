@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation4</title>
+    <style>
+        div{
+            background-image: conic-gradient(red 0deg,red 90deg,yellow 90deg,yellow 180deg,blue 180deg,blue 270deg,green 270deg, green 360deg);
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            animation-name: na;
+            animation-duration: 5s;
+            /* animation-iteration-count: 3; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /* animation-direction: normal; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-delay: 2s; */
+            /* animation-timing-function: linear; */
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            animation-timing-function: ease-in-out;
+            /* animation-fill-mode: both; */
+           
+        }
+        @keyframes na{
+            0%{transform: rotate(45deg);left: 3%;}
+            15%{left: 10%;transform: rotate(90deg);}
+            30%{left: 20%;transform: rotate(135deg);}
+            50%{left:30%;transform: rotate(180deg);}
+            70%{left:40%;transform: rotate(270deg);}
+            90%{left:60%;transform: rotate(310deg);}
+            100%{left:70%;transform: rotate(360deg);}
+        }
+
+        p{
+            animation-name: na1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes na1{
+            0%{letter-spacing: 40px; line-height: 10px; }
+            40%{letter-spacing: 60px; word-spacing: 10px}
+            60%{letter-spacing: 100px; line-height: 20px;}
+            70%{letter-spacing: 120px;}
+            100%{letter-spacing: 140px;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure cum qui quos dolor mollitia! Consequatur adipisci sunt quae laudantium excepturi amet possimus eaque dolores sapiente, autem soluta placeat veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure cum qui quos dolor mollitia! Consequatur adipisci sunt quae laudantium excepturi amet possimus eaque dolores sapiente, autem soluta placeat veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure cum qui quos dolor mollitia! Consequatur adipisci sunt quae laudantium excepturi amet possimus eaque dolores sapiente, autem soluta placeat veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure cum qui quos dolor mollitia! Consequatur adipisci sunt quae laudantium excepturi amet possimus eaque dolores sapiente, autem soluta placeat veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure cum qui quos dolor mollitia! Consequatur adipisci sunt quae laudantium excepturi amet possimus eaque dolores sapiente, autem soluta placeat veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure cum qui quos dolor mollitia! Consequatur adipisci sunt quae laudantium excepturi amet possimus eaque dolores sapiente, autem soluta placeat veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure cum qui quos dolor mollitia! Consequatur adipisci sunt quae laudantium excepturi amet possimus eaque dolores sapiente, autem soluta placeat veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure cum qui quos dolor mollitia! Consequatur adipisci sunt quae laudantium excepturi amet possimus eaque dolores sapiente, autem soluta placeat veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure cum qui quos dolor mollitia! Consequatur adipisci sunt quae laudantium excepturi amet possimus eaque dolores sapiente, autem soluta placeat veniam!
+    </p>
+</body>
+</html>

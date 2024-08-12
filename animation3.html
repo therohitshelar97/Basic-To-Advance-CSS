@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation3</title>
+    <style>
+        .div1{
+            height: 300px;
+            width: 300px;
+            animation-name: na;
+            animation-duration: 10s;
+            background-color: antiquewhite;
+        }
+        @keyframes na{
+            5%{border-radius: 50%;background-image: conic-gradient(red 0deg,red 90deg,yellow 90deg,yellow 180deg,blue 180deg,blue 270deg,green 270deg, green 360deg);}
+            20%{transform: rotate(90deg);}
+            50%{transform: rotate(180deg);}
+            70%{transform: rotate(270deg);}
+            100%{background-image: conic-gradient(red 0deg,red 90deg,yellow 90deg,yellow 180deg,blue 180deg,blue 270deg,green 270deg, green 360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+
+    </div>
+</body>
+</html>

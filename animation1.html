@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .div1{
+            height: 300px;
+            width: 300px;
+            animation-name: ani1;
+            animation-duration: 10s;
+            background-color: aqua;
+            position: relative;
+        }
+        @keyframes ani1{
+            5%{border-radius: 50% 20% 50% 20%;}
+            20%{border-radius: 50%;}
+            40%{border-radius: 10%, 10%  100% 10%;background-image: conic-gradient(red 0deg, red 60deg,yellow 60deg,yellow 120deg,blue 120deg, blue 270deg,yellow 270deg, yellow 360deg);}
+            70%{left:300px;}
+            80%{top: 200px;left: 300px;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>
