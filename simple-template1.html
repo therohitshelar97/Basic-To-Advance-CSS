@@ -8,28 +8,38 @@
         .container{
             display: grid;
             grid-template-columns: 19% 79%;
-            
         }
         
         .sidebar{
-            background-color: rgb(192, 184, 184);
-            
-        
+            width: 100%;
+            background-color: rgb(192, 184, 184);       
         }
+       
         .sidebar>div{
             position: fixed;
             display: inline-block;
             width: 18.5%;
+           height: 100%;
+          
+           overflow-y: scroll;
+           
+        }
+
+        .divfix{
+            position: fixed;
+            width: 18.5%;
+        
         }
 
         a{
             padding-left: 50px;
             margin-bottom: 15px;
             display: block;
+           
         }
         a:hover{
             background-color: rgb(12, 141, 12);
-            width: 80%;
+            width: 100%;
             margin-left: 0;
             margin-right: 0;
             padding-left: 50px;
@@ -43,6 +53,7 @@
            display: grid; 
            grid-template-columns: auto auto auto auto;
            grid-gap: 20px;
+           
         }
 
         .main-side>div{
@@ -51,7 +62,8 @@
             width: 100%;
             border: 5px solid black;
             border-radius: 50px 10px 50px 10px;
-
+            margin-left: 10px;
+            
             
         }
         
@@ -78,16 +90,147 @@
         .main-side>div:hover .iamge-title{
             opacity: 1;
         }
+        .menubar{
+            display: none;
+        }
+
+        @media screen and (max-width:1040px){
+            
+            .container{
+            display: grid;
+            grid-template-columns: 18% 79%;
+            position: relative;
+            }
+
+            /* .sidebar{display: none  ;} */
+
+            .sidebar{
+            width: 100%;
+            background-color: rgb(192, 184, 184);  
+            /* position: absolute;   */
+            
+               
+         }
 
 
 
+            .main-side{
+           display: grid; 
+           grid-template-columns: auto auto ;
+           grid-gap: 20px;
+           position: relative;
+           
+          }
+
+          .main-side>div{
+            position: relative;
+            height: 250px;
+            width: 99%;
+            border: 5px solid black;
+            border-radius: 50px 10px 50px 10px;   
+            margin: 0;  
+           }
+           .menubar{
+            display: none;
+          }
+
+          .menubar:hover .sidebar{
+            display: inline-block ;
+            
+        }
+
+        }
+
+
+        @media screen and (max-width:540px){
+           
+            .container{
+            display: grid;
+            grid-template-columns:100%;
+            
+            }
+
+            .main-side{
+           display: grid; 
+           grid-template-columns: auto ;
+           grid-gap: 20px;
+           position: relative;
+           
+          }
+
+          .main-side>div{
+            position: relative;
+            height: 250px;
+            width: 99%;
+            border: 5px solid black;
+            border-radius: 50px 10px 50px 10px;   
+            margin: 0;  
+           }
+           .menubar{
+            display: block;
+          }
+
+          .sidebar{
+            width: 100%;
+            position: absolute;  
+            background-color: rgb(192, 184, 184);  
+           display: none;
+            
+               
+         }
+
+         .sidebar>div{
+            position: fixed;
+            display: inline-block;
+            width: 50%;
+            height: 100%;
+            overflow-y: scroll;
+           
+           
+        }
+
+        .divfix{
+            position: fixed;
+            width: 18.5%;
+        
+        }
+
+        .main-side:hover .sidebar{
+            opacity: 1;
+            
+        }
+
+        
+
+        a{
+            padding-left: 50px;
+            margin-bottom: 15px;
+            display: block;
+           
+        }
+        a:hover{
+            background-color: rgb(12, 141, 12);
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color:white;
+            display: block;
+        }
+        
+    }
+
+      
     </style>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
+        <div class="divfixed">
         <div>
-           <h2>Side Bar</h2>
+          
            <a>Home</a>
            <a>Home</a>
            <a>Home</a>
@@ -123,10 +266,15 @@
            <a>Home</a>
            <a>Home</a>
         </div> 
+    </div>
         </div>
         <div class="">
-            <h2>Main side</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" class="menubar menushow" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg> 
+            
             <div class="main-side">
+                
            <div>
                <img src="images/p (1).jpg" class="images image-click" />
                <div class="iamge-title">
