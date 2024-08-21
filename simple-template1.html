@@ -108,8 +108,7 @@
             width: 100%;
             background-color: rgb(192, 184, 184);  
             /* position: absolute;   */
-            
-               
+                 
          }
 
 
@@ -119,6 +118,7 @@
            grid-template-columns: auto auto ;
            grid-gap: 20px;
            position: relative;
+           z-index: 0;
            
           }
 
@@ -175,8 +175,7 @@
             position: absolute;  
             background-color: rgb(192, 184, 184);  
            display: none;
-            
-               
+            z-index: 1;
          }
 
          .sidebar>div{
@@ -189,11 +188,7 @@
            
         }
 
-        .divfix{
-            position: fixed;
-            width: 18.5%;
-        
-        }
+       
 
         .main-side:hover .sidebar{
             opacity: 1;
@@ -219,6 +214,9 @@
             color:white;
             display: block;
         }
+        .bg{
+            background-color: rgb(192, 184, 184);
+        }
         
     }
 
@@ -227,10 +225,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
-        <div class="divfixed">
-        <div>
-          
+        <div class="sidebar side">
+        <div class="divfixed div">
+        <div class="bg">
+            <svg onclick="Phone_Sidebar_Hide()" xmlns="http://www.w3.org/2000/svg" class="menubar menushow" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg> 
            <a>Home</a>
            <a>Home</a>
            <a>Home</a>
@@ -269,7 +269,7 @@
     </div>
         </div>
         <div class="">
-            <svg xmlns="http://www.w3.org/2000/svg" class="menubar menushow" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <svg onclick="Phone_Sidebar()" xmlns="http://www.w3.org/2000/svg" class="menubar menushow" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
             </svg> 
             
@@ -377,5 +377,28 @@
         </div>
     </div>
     </div>
+
+    <script>
+        function Phone_Sidebar(){
+            var side = document.getElementsByClassName("side")[0]
+            side.style.width = 100 + "%";
+            side.style.zIndex = 1
+            side.style.display = 'block'
+
+           
+
+            var div = document.getElementsByClassName('div')[0]
+            div.style.position = "fixed"
+            div.style.display = "inline-block"
+            div.style.width = 50 + "%"
+            div.style.height = 100 + "%"
+            div.style.overflowY = "scroll"
+        }
+
+        function Phone_Sidebar_Hide(){
+            var side = document.getElementsByClassName("side")[0]
+            side.style.display = "none"
+        }
+    </script>
 </body>
 </html>
