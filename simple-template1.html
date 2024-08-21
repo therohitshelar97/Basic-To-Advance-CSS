@@ -12,7 +12,8 @@
         
         .sidebar{
             width: 100%;
-            background-color: rgb(192, 184, 184);       
+            background-color: rgb(192, 184, 184);    
+            margin-top: 5px;   
         }
        
         .sidebar>div{
@@ -53,6 +54,7 @@
            display: grid; 
            grid-template-columns: auto auto auto auto;
            grid-gap: 20px;
+           margin-top: 5px;
            
         }
 
@@ -174,7 +176,7 @@
             width: 100%;
             position: absolute;  
             background-color: rgb(192, 184, 184);  
-           display: none;
+            display: none;
             z-index: 1;
          }
 
@@ -220,10 +222,40 @@
         
     }
 
+     .nav{
+       background-color: rgb(47, 43, 43) ;
+       position: sticky;
+       top: 0;
+       z-index: 2;
+     }
+
+     .navul{
+        list-style-type: none;
+        padding: 10px 10px;
+     }
       
+     .navul>li{
+        display: inline-block;
+        color: white;
+        width: 200px;
+     }
     </style>
 </head>
 <body>
+
+    <nav class="nav">
+      <ul class="navul">
+        <li>Cloths</li>
+        <li>All Gents Cloths</li>
+        <li>All Ladies Cloths</li>
+        <li>All Kids Cloths</li>
+        <li>T-Shirts</li>
+        <li>Pants</li>
+        <li>Sports</li>
+
+      </ul>
+    </nav>
+
     <div class="container">
         <div class="sidebar side">
         <div class="divfixed div">
